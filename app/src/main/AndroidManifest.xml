@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.myautocare">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+
+
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/log"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/log"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyATGaWjYT3Lf4k9Ue5Xz6_fA9YRf-VyyeQ"/>
+
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+        
+
+        <activity android:name=".Activities.Webview"/>
+        <activity android:name=".MenuActivities.BrandActivities.BrandUserViews.ToyotaUserView" />
+        <activity android:name=".MenuActivities.BrandActivities.BrandUserViews.RangeUserView" />
+        <activity android:name=".MenuActivities.BrandActivities.BrandUserViews.MercedesUserView" />
+        <activity android:name=".MenuActivities.BrandActivities.BrandUserViews.BmwUserView" />
+        <activity android:name=".User.SignUpActivity" />
+        <activity android:name=".MenuActivities.Brands" />
+        <activity android:name=".MenuActivities.BrandActivities.Toyota" />
+        <activity android:name=".MenuActivities.BrandActivities.Mercedes" />
+        <activity android:name=".MenuActivities.BrandActivities.RangeRover" />
+        <activity android:name=".MenuActivities.BrandActivities.BMW" />
+        <activity android:name=".MenuActivities.ContactUs" />
+        <activity android:name=".MenuActivities.AboutUs" />
+        <activity android:name=".MenuActivities.Settings" />
+        <activity android:name=".MenuActivities.Mylocation" />
+        <activity android:name=".MenuActivities.MyParts" />
+        <activity android:name=".MenuActivities.Profile" />
+        <activity android:name=".Admin.AdminViews.Toyota.ImagesToyotaActivity" />
+        <activity android:name=".Admin.AdminViews.Toyota.MainToyotaActivity" />
+        <activity android:name=".Admin.AdminViews.RangeRover.ImagesRangeActivity" />
+        <activity android:name=".Admin.AdminViews.RangeRover.MainRangeActivity" />
+        <activity android:name=".Admin.AdminViews.Mercedes.ImagesMercActivity" />
+        <activity android:name=".Admin.AdminViews.Mercedes.MainMercActivity" />
+        <activity android:name=".Admin.AdminViews.BMW.ImagesActivity" />
+        <activity android:name=".Admin.AdminViews.BMW.Main2Activity" />
+        <activity android:name=".Admin.AdminHome" />
+        <activity android:name=".Admin.AdminSignup" />
+        <activity android:name=".Admin.AdminLogin" />
+        <activity
+            android:name=".User.LoginActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+        <activity android:name=".Activities.MainActivity" />
+        <activity
+            android:name=".Activities.SplashScreen"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

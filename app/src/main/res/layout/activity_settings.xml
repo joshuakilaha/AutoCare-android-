@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/logindesigns"
+    tools:context=".MenuActivities.Settings">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:textSize="50dp"
+        android:text="Settings"
+        android:layout_gravity="center"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/tvf"
+            android:layout_alignParentTop="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:text="First Name:"/>
+
+
+        <TextView
+            android:id="@+id/tvl"
+            android:layout_below="@id/tvf"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:text="Last Name:"/>
+
+        <TextView
+            android:id="@+id/tvid"
+            android:layout_below="@id/tvl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:text="Id Number:"/>
+
+        <TextView
+            android:id="@+id/tve"
+            android:layout_below="@id/tvid"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:text="Email"/>
+
+        <TextView
+            android:id="@+id/tvp"
+            android:layout_below="@id/tve"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:text="Password"/>
+
+
+        <Button
+            android:id="@+id/update"
+            android:layout_below="@id/tvp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="Update"/>
+
+
+
+
+        <EditText
+            android:id="@+id/first"
+            android:layout_toRightOf="@id/tvf"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+
+        <EditText
+            android:id="@+id/last"
+            android:layout_toRightOf="@id/tvl"
+            android:layout_below="@id/tvf"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <EditText
+            android:id="@+id/id"
+            android:layout_toRightOf="@id/tvid"
+            android:layout_below="@id/tvl"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <EditText
+            android:id="@+id/mail"
+            android:layout_below="@id/tvid"
+            android:layout_toRightOf="@id/tve"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"/>
+
+
+        <EditText
+            android:id="@+id/pass"
+            android:layout_toRightOf="@id/tvp"
+            android:layout_below="@+id/tve"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+
+
+</RelativeLayout>
+
+
+
+</LinearLayout>

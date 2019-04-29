@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Auto Care</string>
+    <string name="Signup"><u> Sign up here</u></string>
+    <string name="Forgotpassword"><u>Forgot Password</u></string>
+    <string name="Adnim"><u>Login as Admin</u></string>
+
+
+    <string name="AdminSignup"><u>Signup</u></string>
+
+    <string name="open">Open</string>
+    <string name="close">Close</string>
+
+</resources>

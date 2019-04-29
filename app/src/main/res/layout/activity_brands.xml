@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout
+    android:id="@+id/drawer_layout"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MenuActivities.Brands">
+
+    <android.support.design.widget.NavigationView
+        android:id="@+id/design_navigation_view"
+        app:headerLayout="@layout/header_design_navigation_bar"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        app:menu="@menu/drawermenu"
+        android:layout_gravity="start">
+
+    </android.support.design.widget.NavigationView>
+
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/logindesigns">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Brands"
+            android:textSize="50dp"/>
+
+        <RelativeLayout
+            android:id="@+id/brand_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="5dp"
+                android:layout_marginBottom="5dp"
+                android:layout_alignParentTop="true"
+                android:background="@color/viewbrand"/>
+
+
+            <ViewFlipper
+                android:id="@+id/brandflip"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_centerHorizontal="true">
+
+            </ViewFlipper>
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="5dp"
+                android:layout_marginBottom="5dp"
+                android:layout_below="@id/brandflip"
+                android:background="@color/viewbrand"/>
+
+            <ViewFlipper
+                android:layout_below="@id/brandflip"
+                android:id="@+id/brandflip2"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_centerHorizontal="true">
+
+            </ViewFlipper>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="5dp"
+                android:layout_marginBottom="5dp"
+                android:layout_below="@id/brandflip2"
+                android:background="@color/viewbrand"/>
+
+
+            <ViewFlipper
+                android:layout_below="@id/brandflip2"
+                android:id="@+id/brandflip3"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_centerHorizontal="true">
+
+            </ViewFlipper>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="5dp"
+                android:layout_marginBottom="5dp"
+                android:layout_below="@id/brandflip3"
+                android:background="@color/viewbrand"/>
+
+            <ViewFlipper
+                android:layout_below="@id/brandflip3"
+                android:id="@+id/brandflip4"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_centerHorizontal="true">
+
+            </ViewFlipper>
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+</ScrollView>
+
+</android.support.v4.widget.DrawerLayout>

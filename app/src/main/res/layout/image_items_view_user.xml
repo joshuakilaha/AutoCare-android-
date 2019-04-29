@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/text_view_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_toRightOf="@id/image_view_upload"
+            android:layout_marginBottom="8dp"
+            android:layout_marginTop="8dp"
+            android:text="Name"
+            android:textColor="@android:color/black"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/text_view_description"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_below="@id/text_view_name"
+            android:layout_toRightOf="@id/image_view_upload"
+            android:layout_marginBottom="8dp"
+            android:layout_marginTop="8dp"
+            android:text="Description"
+            android:textColor="@android:color/black"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/text_view_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_below="@id/text_view_description"
+            android:layout_toRightOf="@id/image_view_upload"
+            android:layout_marginBottom="8dp"
+            android:layout_marginTop="8dp"
+            android:inputType="number"
+            android:text="Ksh. "
+            android:textColor="@android:color/black"
+            android:textSize="20dp" />
+
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/image_view_upload"
+            android:layout_width="96dp"
+            android:layout_height="96dp"
+            android:layout_below="@id/ViewBMWtitle"
+            />
+
+            <ImageView
+                android:id="@+id/add_to_chart"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_toRightOf="@id/text_view_price"
+                android:layout_marginLeft="220dp"
+                android:layout_above="@id/v"
+                android:background="@drawable/ic_add_circle_black_24dp"/>
+
+        <View
+            android:id="@+id/v"
+            android:layout_width="match_parent"
+            android:layout_height="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_below="@id/text_view_price"
+            android:background="@color/BMWview"/>
+
+
+    </RelativeLayout>
+
+</LinearLayout>
